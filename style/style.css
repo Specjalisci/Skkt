@@ -61,12 +61,29 @@ nav:hover{
 	width: 100%;
 	height: 300px;
 }	
+#shortcut{
+	width: 60em;
+	margin: 0 auto;
+	height: 12em;
+}
+#shortcut ul li{
+	width: 20em;
+	height: 12em;
+	display: block;
+	float: left;
+	text-align: center;
+	padding: 5em 10em 3em 0em;
 
+}
+#shortcut ul li img{
+	float: left;
+	
+}
 
+#shortcut ul li span{
+	
+}
 
-<<<<<<< HEAD
-
-=======
 body{
 	font-family:"Myriad Pro Regular"
 }
@@ -75,7 +92,7 @@ h2{
 	color: #0a79a5;
 	font-family:"Myriad Pro Semibold";
 }
-<<<<<<< HEAD
+
 h3{
 	font-family:"Myriad Pro Semibold";
 }
@@ -94,16 +111,12 @@ h3{
 	float: left;
 	display: block;
 	background: rgba(228,105,160,1);
-background: -moz-linear-gradient(top, rgba(228,105,160,1) 0%, rgba(172,1,35,1) 30%, rgba(93,1,65,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(228,105,160,1)), color-stop(30%, rgba(172,1,35,1)), color-stop(100%, rgba(93,1,65,1)));
-background: -webkit-linear-gradient(top, rgba(228,105,160,1) 0%, rgba(172,1,35,1) 30%, rgba(93,1,65,1) 100%);
-background: -o-linear-gradient(top, rgba(228,105,160,1) 0%, rgba(172,1,35,1) 30%, rgba(93,1,65,1) 100%);
-background: -ms-linear-gradient(top, rgba(228,105,160,1) 0%, rgba(172,1,35,1) 30%, rgba(93,1,65,1) 100%);
-background: linear-gradient(to bottom, rgba(228,105,160,1) 0%, rgba(172,1,35,1) 30%, rgba(93,1,65,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e469a0', endColorstr='#5d0141', GradientType=0 );
+	background: -moz-linear-gradient(top, rgba(228,105,160,1) 0%, rgba(172,1,35,1) 30%, rgba(93,1,65,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(228,105,160,1)), color-stop(30%, rgba(172,1,35,1)), color-stop(100%, rgba(93,1,65,1)));
+	background: -webkit-linear-gradient(top, rgba(228,105,160,1) 0%, rgba(172,1,35,1) 30%, rgba(93,1,65,1) 100%);
+	background: -o-linear-gradient(top, rgba(228,105,160,1) 0%, rgba(172,1,35,1) 30%, rgba(93,1,65,1) 100%);
+	background: -ms-linear-gradient(top, rgba(228,105,160,1) 0%, rgba(172,1,35,1) 30%, rgba(93,1,65,1) 100%);
+	background: linear-gradient(to bottom, rgba(228,105,160,1) 0%, rgba(172,1,35,1) 30%, rgba(93,1,65,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e469a0', endColorstr='#5d0141', GradientType=0 );
 }
 
-=======
->>>>>>> origin/master
->>>>>>> origin/master
->>>>>>> origin/master
