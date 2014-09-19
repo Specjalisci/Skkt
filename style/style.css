@@ -1,4 +1,25 @@
-<<<<<<< HEAD
+@font-face {
+font-family: 'Myriad Pro Regular';
+font-style: normal;
+font-weight: normal;
+src: local('font/myriad/Myriad Pro Regular'), url('font/myriad/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Myriad Pro Semibold';
+font-style: normal;
+font-weight: normal;
+src: local('font/myriad/Myriad Pro Semibold'), url('font/myriad/MYRIADPRO-SEMIBOLD.woff') format('woff');
+}
+
+body{
+	font-family:"Myriad Pro Regular"
+}
+h2{
+	font-size: 2.5em;
+	color: #0a79a5;
+}
+
 .clear{
 	clear: both;
 }
@@ -20,6 +41,7 @@
 #nav li a{
 	text-decoration: none;
 	color: black;
+	font-family: 'Myriad Pro Regular';
 	font-weight: bold;
 }
 
@@ -40,26 +62,6 @@ nav:hover{
 	height: 300px;
 }	
 
-=======
-@font-face {
-font-family: 'Myriad Pro Regular';
-font-style: normal;
-font-weight: normal;
-src: local('font/myriad/Myriad Pro Regular'), url('font/myriad/Myriad Pro Regular.woff') format('woff');
-}
 
-@font-face {
-font-family: 'Myriad Pro Semibold';
-font-style: normal;
-font-weight: normal;
-src: local('font/myriad/Myriad Pro Semibold'), url('font/myriad/MYRIADPRO-SEMIBOLD.woff') format('woff');
-}
 
-body{
-	font-family:"Myriad Pro Regular"
-}
-h2{
-	font-size: 2.5em;
-	color: #0a79a5;
-}
->>>>>>> origin/master
+
