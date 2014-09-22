@@ -85,9 +85,33 @@ nav:hover{
 	
 }
 .widget{
-	width: 600px;
+	width: 960px;
+	padding-bottom: 40px;
+	margin-left: 190px ;
+	margin-right: 200px;
+}
+
+.widget > h2{
+	padding-bottom: 40px;
+}
+#tekst h2{
+	color: black;
+}
+
+#tekst{
+	
+	width: 700px;
+	height: 120px;
+	overflow: auto;
+}
+
+#kalendarz{
+	width: 120px;
+	height: 120px;
+	background-color: blue;
 	float: left;
-	margin: 0 auto;
+	margin-right: 20px;
+	margin-left: 20px;
 }
 
 #last {
