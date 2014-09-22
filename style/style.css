@@ -84,7 +84,7 @@ nav:hover{
 	height: 60%;
 	
 }
-<<<<<<< HEAD
+
 
 #shortcut ul li span{
 	
@@ -98,7 +98,7 @@ h2{
 	color: #0a79a5;
 	font-family:"Myriad Pro Semibold";
 }
-=======
+
 .widget{
 	width: 960px;
 	padding-bottom: 40px;
@@ -129,7 +129,7 @@ h2{
 	margin-left: 20px;
 }
 
->>>>>>> origin/master
+
 
 
 #last {
@@ -233,28 +233,9 @@ footer{
 .row{
 	postion:relative;
 }
-#tglBtn{
-	
-	
+footer .btn{
+	color: white;
+	outline: none;
+	background: #;	
 }
-#btn button{
-	padding-top:10px;
-	padding-bottom:10px;
-	width: 100%;
-	font-family: "Myriad Pro Semibold";
-	color: #F0F0F0;
-	max-width:150px;
-	width: 100%;
-	background: #7cc343;
-	text-align: center;
-	margin-right: 30px;
-	cursor:pointer;
-	float:right;
-	right: 50px;
-}
-#tglBtn:before{
-	content:'';
-}
-#tglBtn:after{
-	content:'';
-}
+
