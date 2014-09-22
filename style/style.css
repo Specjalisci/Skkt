@@ -66,15 +66,13 @@ nav:hover{
 	height: 300px;
 }	
 #shortcut{
-	width: 960px;
-	margin: 0 auto;
-	
+	text-align:center;
 }
 #shortcut ul li{
 	width: 200px;
 	height: 12em;
 	display: inline-block;
-	float: left;
+	
 	text-align: center;
 	padding: 40px 20px 20px 0px;
 
@@ -98,12 +96,15 @@ h2{
 	color: #0a79a5;
 	font-family:"Myriad Pro Semibold";
 }
-
+#container{
+	width: 960px;
+	margin: 0 auto;
+}
 .widget{
 	width: 960px;
 	padding-bottom: 40px;
-	margin-left: 190px ;
-	margin-right: 200px;
+	margin-top: 20px;
+
 }
 
 .widget > h2{
@@ -126,7 +127,7 @@ h2{
 	background-color: blue;
 	float: left;
 	margin-right: 20px;
-	margin-left: 20px;
+	margin-left: 40px;
 }
 
 
@@ -135,11 +136,9 @@ h2{
 #last {
 	margin: 0 auto;
 	width: 960px;
-	margin-top: 20px;
+
 }
-#last h2{
-	margin-left: 35px;
-}
+
 #last ul{
 	margin-top: 20px;
 }
