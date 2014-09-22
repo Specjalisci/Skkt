@@ -20,6 +20,10 @@ h2{
 	color: #0a79a5;
 }
 
+h3{
+	font-family:"Myriad Pro Semibold";
+}
+
 .clear{
 	clear: both;
 }
@@ -80,23 +84,12 @@ nav:hover{
 	height: 60%;
 	
 }
-
-#shortcut ul li span{
-	
+.widget{
+	width: 600px;
+	float: left;
+	margin: 0 auto;
 }
 
-body{
-	font-family:"Myriad Pro Regular"
-}
-h2{
-	font-size: 2.2em;
-	color: #0a79a5;
-	font-family:"Myriad Pro Semibold";
-}
-
-h3{
-	font-family:"Myriad Pro Semibold";
-}
 #last {
 	margin: 0 auto;
 	width: 960px;
