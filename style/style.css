@@ -20,6 +20,10 @@ h2{
 	color: #0a79a5;
 }
 
+h3{
+	font-family:"Myriad Pro Semibold";
+}
+
 .clear{
 	clear: both;
 }
@@ -80,6 +84,7 @@ nav:hover{
 	height: 60%;
 	
 }
+<<<<<<< HEAD
 
 #shortcut ul li span{
 	
@@ -93,10 +98,40 @@ h2{
 	color: #0a79a5;
 	font-family:"Myriad Pro Semibold";
 }
-
-h3{
-	font-family:"Myriad Pro Semibold";
+=======
+.widget{
+	width: 960px;
+	padding-bottom: 40px;
+	margin-left: 190px ;
+	margin-right: 200px;
 }
+
+.widget > h2{
+	padding-bottom: 40px;
+}
+#tekst h2{
+	color: black;
+}
+
+#tekst{
+	
+	width: 700px;
+	height: 120px;
+	overflow: auto;
+}
+
+#kalendarz{
+	width: 120px;
+	height: 120px;
+	background-color: blue;
+	float: left;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+>>>>>>> origin/master
+
+
 #last {
 	margin: 0 auto;
 	width: 960px;
