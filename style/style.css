@@ -40,20 +40,20 @@ h2{
 }
 #nav li a{
 	text-decoration: none;
-	color: black;
+	color: #E0E0E0;
 	font-family: 'Myriad Pro Regular';
 	font-weight: bold;
 }
 
 nav{
 	transition-duration: 1s;
-	background: rgba(255,255,255,0.3);
+	background: rgba(0,0,0,0.6);
 	position: fixed;
 	width: 100%; 
 	height: 5em;
 }
 nav:hover{
-	background: rgba(255,255,255,1);
+	background: rgba(0,0,0,0.92);
 	transition-duration: 1s;
 }
 
@@ -62,21 +62,22 @@ nav:hover{
 	height: 300px;
 }	
 #shortcut{
-	width: 60em;
+	width: 600px;
 	margin: 0 auto;
 	height: 12em;
 }
 #shortcut ul li{
-	width: 20em;
+	width: 200px;
 	height: 12em;
-	display: block;
+	display: inline-block;
 	float: left;
 	text-align: center;
-	padding: 5em 10em 3em 0em;
+	padding: 5em 5em 3em 0em;
 
 }
 #shortcut ul li img{
-	float: left;
+	width: 60%;
+	height: 60%;
 	
 }
 
