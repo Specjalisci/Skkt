@@ -80,36 +80,6 @@ nav:hover{
 	height: 60%;
 	
 }
-<<<<<<< HEAD
-.widget{
-	width: 960px;
-	padding-bottom: 40px;
-	margin-left: 190px ;
-	margin-right: 200px;
-}
-
-.widget > h2{
-	padding-bottom: 40px;
-}
-#tekst h2{
-	color: black;
-}
-
-#tekst{
-	
-	width: 700px;
-	height: 120px;
-	overflow: auto;
-}
-
-#kalendarz{
-	width: 120px;
-	height: 120px;
-	background-color: blue;
-	float: left;
-	margin-right: 20px;
-	margin-left: 20px;
-=======
 
 #shortcut ul li span{
 	
@@ -122,7 +92,6 @@ h2{
 	font-size: 2.2em;
 	color: #0a79a5;
 	font-family:"Myriad Pro Semibold";
->>>>>>> origin/master
 }
 
 h3{
@@ -227,17 +196,10 @@ footer{
 	
 }
 .row{
-	position:relative;
+	postion:relative;
 }
 #tglBtn{
-	max-width:150px;
-	width: 100%;
-	background: #7cc343;
-	text-align: center;
-	margin-right: 30px;
-	cursor:pointer;
-	float:right;
-	right: 50px;
+	
 	
 }
 #btn button{
@@ -246,6 +208,14 @@ footer{
 	width: 100%;
 	font-family: "Myriad Pro Semibold";
 	color: #F0F0F0;
+	max-width:150px;
+	width: 100%;
+	background: #7cc343;
+	text-align: center;
+	margin-right: 30px;
+	cursor:pointer;
+	float:right;
+	right: 50px;
 }
 #tglBtn:before{
 	content:'';
