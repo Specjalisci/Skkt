@@ -66,9 +66,9 @@ nav:hover{
 	height: 300px;
 }	
 #shortcut{
-	width: 600px;
+	width: 960px;
 	margin: 0 auto;
-	height: 12em;
+	
 }
 #shortcut ul li{
 	width: 200px;
@@ -76,7 +76,7 @@ nav:hover{
 	display: inline-block;
 	float: left;
 	text-align: center;
-	padding: 5em 5em 3em 0em;
+	padding: 40px 20px 20px 0px;
 
 }
 #shortcut ul li img{
