@@ -213,17 +213,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e469a0', end
 }
 footer{
 	width: 100%;
-	height: 225px;
-	margin-top: 200px;
-	background-color: rgb(30, 30,30);
+	position:fixed;
+	bottom:0;
+	
 	
 }
 .row{
 	postion:relative;
 }
+
 footer .btn{
 	color: white;
+	max-width: 100px;
+	padding: 8px 0px 10px 0px;
+	width: 100%;
+	font-family: "Myriad Pro Semibold";
+	float: right;
+	margin-right: 80px;
+	margin-top: -20px;
+	cursor: pointer;
 	outline: none;
-	background: #;	
+	border: none;
+	background: rgb(124, 195, 67);	
+}
+
+.footer{
+	display: block;
+	background-color: rgb(30, 30,30);
+	width: 100%;
+	height: 225px;
 }
 
