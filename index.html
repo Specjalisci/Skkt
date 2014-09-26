@@ -16,35 +16,33 @@
 		<script src="js/jquery-1.6.3.min.js"></script>
 		<script src="js/jquery.anythingslider.min.js" ></script>
 		<script src="js/jquery-ui.min.js"></script>
-		<script>
-			$(document).ready(function(){
-				$('#slider').anythingSlider({
-					buildStartStop : false,
-					buildNavigation : false
-				});
-<<<<<<< HEAD
-				$('.footer').hide();
-				$('.btn').toggle(function(){
-					$(this).text('zwiń');
-					$('.footer').slideDown(170);
-				},function(){
-					$(this).text('rozwiń');
-					$('.footer').slideUp(150);
-				});			
+<script>
+	$(document).ready(function(){
+		$('#slider').anythingSlider({
+			buildStartStop : false,
+			buildNavigation : false
 		});
-=======
-				$('#kalendarz').datepicker(
-				{
-					firstDay: 1,
-					dateFormat: 'dd-mm-yy',
-					onSelect: function(data){
-						$("#tekst h2").text(data);
-					}
-				}
-				);
-			});
->>>>>>> origin/master
-		</script>
+		$('#kalendarz').datepicker(
+			{
+				firstDay: 1,
+				dateFormat: 'dd-mm-yy',
+				onSelect: function(data){
+					$("#tekst h2").text(data);
+			}
+			}
+			);
+			
+			$('.footer').hide();
+			$('.btn').toggle(function(){
+				$(this).text('zwiń');
+				$('.footer').slideDown(170);
+			},function(){
+				$(this).text('rozwiń');
+				$('.footer').slideUp(150);
+			});	
+		});
+</script>
+
 </head>
 
 <body>
