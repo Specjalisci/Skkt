@@ -11,15 +11,26 @@
 		<link rel="stylesheet" href="style/reset.css" type="text/css" />
 		<link rel="stylesheet" href="style/style.css" type="text/css" /> 
 		<link rel="stylesheet" href="js/anythingslider.css" type="text/css" />
+		<link rel="stylesheet" href="js/jquery-ui.min.css" type="text/css" />
 		<link rel="shortcut icon" href="/favicon.ico">
 		<script src="js/jquery-1.6.3.min.js"></script>
 		<script src="js/jquery.anythingslider.min.js" ></script>
+		<script src="js/jquery-ui.min.js"></script>
 		<script>
 			$(document).ready(function(){
 				$('#slider').anythingSlider({
 					buildStartStop : false,
 					buildNavigation : false
 				});
+				$('#kalendarz').datepicker(
+				{
+					firstDay: 1,
+					dateFormat: 'dd-mm-yy',
+					onSelect: function(data){
+						$("#tekst h2").text(data);
+					}
+				}
+				);
 			});
 		</script>
 </head>
@@ -77,7 +88,6 @@
 					<h2>Najbliższe Rajdy</h2>
 					<div class="widget">
 						<div id="kalendarz">
-							STYCZEŃ LUTY
 						</div> 
 						<div id="tekst"> <!-- tutaj ma być suwak-->
 							<p><h2>Tytuł</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -96,6 +106,7 @@
 						</div> <!--en of tekst -->
 					</div> <!-- end of widget -->
 				</div> <!-- end of content-->
+				<div class="clear"></div>
 			<div id="last">
 				<h2>OSTATNIE WYDARZENIA</h2>
 					<ul>

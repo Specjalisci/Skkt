@@ -13,7 +13,7 @@ src: local('font/myriad/Myriad Pro Semibold'), url('font/myriad/MYRIADPRO-SEMIBO
 }
 
 body{
-	font-family:"Myriad Pro Regular"
+	font-family:"Myriad Pro Regular";
 }
 h2{
 	font-size: 2.5em;
@@ -62,6 +62,8 @@ nav:hover{
 	transition-duration: 1s;
 }
 
+
+
 #slider img{
 	width: 100%;
 	height: 282px;
@@ -90,33 +92,32 @@ nav:hover{
 	margin: 0 auto;
 }
 .widget{
-	width: 960px;
-	padding-bottom: 40px;
+	width: 900px;
+	height: 200px;
 	margin-top: 20px;
-
+	margin-bottom: 60px;
 }
 
-.widget > h2{
-	padding-bottom: 40px;
-}
 #tekst h2{
 	color: black;
 }
 
 #tekst{
-	
-	width: 700px;
-	height: 120px;
+	position: relative;
+	top: 10%;
+	left: 20px;
+	float: right;
+	width: 500px;
+	height: 160px;
 	overflow: auto;
+
 }
 
 #kalendarz{
-	width: 120px;
-	height: 120px;
-	background-color: blue;
 	float: left;
-	margin-right: 20px;
-	margin-left: 40px;
+	position: relative;
+	left: 40px;
+
 }
 
 

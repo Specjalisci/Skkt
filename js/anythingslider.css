@@ -48,7 +48,7 @@ div.anythingSlider .start-stop:hover, div.anythingSlider .start-stop.hover {
 /**** Active State (slider has keyboard focus) ****/
 /* slider window - top & bottom borders, active state */
 div.anythingSlider.activeSlider .anythingWindow {
-	border-color: #7C9127;
+	border-color: black;
 }
 /* Navigation buttons, active state */
 div.anythingSlider.activeSlider .anythingControls ul a.cur, div.anythingSlider.activeSlider .anythingControls ul a {
@@ -77,7 +77,7 @@ div.anythingSlider {
 	margin: 0 auto;
 	overflow: visible !important; /* needed for Opera and Safari */
 	position: relative;
-	padding: 0 0px 28px 0px;
+	padding: 80px 0px 28px 0px;
 }
 /* anythingSlider viewport window */
 div.anythingSlider .anythingWindow {
