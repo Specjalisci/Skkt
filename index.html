@@ -20,7 +20,15 @@
 					buildStartStop : false,
 					buildNavigation : false
 				});
-			});
+				$('.footer').hide();
+				$('.btn').toggle(function(){
+					$(this).text('zwiń');
+					$('.footer').slideDown(170);
+				},function(){
+					$(this).text('rozwiń');
+					$('.footer').slideUp(150);
+				});			
+		});
 		</script>
 </head>
 
@@ -148,7 +156,7 @@
 			
 			<div id="row">
 				
-			 	<button class="btn">Więcej</button>
+			 	<button class="btn">rozwiń</button>
 				
 			</div>
 			
