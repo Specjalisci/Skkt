@@ -18,10 +18,12 @@ body{
 h2{
 	font-size: 2.5em;
 	color: #0a79a5;
+	font-family: "Myriad Pro Semibold"
 }
 
 h3{
 	font-family:"Myriad Pro Semibold";
+	font-size: 2em;
 }
 
 .clear{
@@ -125,7 +127,7 @@ nav:hover{
 #last {
 	margin: 0 auto;
 	width: 960px;
-
+	height: 440px;
 }
 
 #last ul{
