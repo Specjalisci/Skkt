@@ -8,7 +8,6 @@
 
 		<title>SKKT Elektronik</title>
 		<meta name="author" content="Marek Łunkiewicz & Maciej Gurgul">
-		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 		<link rel="stylesheet" href="style/reset.css" type="text/css" />
 		<link rel="stylesheet" href="style/style.css" type="text/css" /> 
 		<link rel="stylesheet" href="js/anythingslider.css" type="text/css" />
@@ -17,7 +16,10 @@
 		<script src="js/jquery.anythingslider.min.js" ></script>
 		<script>
 			$(document).ready(function(){
-				$('#slider').anythingSlider();
+				$('#slider').anythingSlider({
+					buildStartStop : false,
+					buildNavigation : false
+				});
 			});
 		</script>
 </head>
@@ -38,8 +40,12 @@
 				</nav>
 				<div class="clear"></div>
 				<div id="slider">
+					<div>
 					<a href="#"><img src="img/banner.png" alt="Brak slidera" /></a>
-					
+					</div>
+					<div>
+						<a href="#"><img src="img/2010_081.jpg" alt="Brak slidera" /></a>
+					</div>
 				</div> <!-- end of slider -->
 		</header>
 		<div id="container">
