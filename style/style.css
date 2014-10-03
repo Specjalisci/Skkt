@@ -325,3 +325,12 @@ footer .btn{
 #mr img{
 	margin-left: 50px;
 }
+
+#gallery ul{
+	margin: 100px 0px 0px 0px;
+}
+
+#gallery ul li{
+	display: inline;
+	margin: 0px 50px 0px 0px;
+}
