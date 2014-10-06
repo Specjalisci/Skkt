@@ -15,13 +15,22 @@
 		<link rel="shortcut icon" href="img/favicon.png">
 		<script src="js/jquery-1.6.3.min.js"></script>
 		<script src="js/jquery.anythingslider.min.js" ></script>
+		<script src="js/jquery-ui.min.js"></script>
 <script>
 	$(document).ready(function(){
 		$('#slider').anythingSlider({
 			buildStartStop : false,
 			buildNavigation : false
 		});
-		
+		$('#kalendarz').datepicker(
+			{
+				firstDay: 1,
+				dateFormat: 'dd-mm-yy',
+				onSelect: function(data){
+					$("#tekst h3").text(data);
+			}
+			}
+			);
 			
 			$('.footer').hide();
 			$('.btn').toggle(function(){
@@ -45,24 +54,30 @@
 					<a id="logo" href="#"><img src="img/logo.png" alt="Brak loga"></a>
 					<ul id="nav">
 						<li><a href="index.html">Aktualności</a></li>
-						<li><a href="#">Opiekunowie</a></li>
+						<li><a href="opiekunowie.html">Opiekunowie</a></li>
 						<li><a href="galeria.html">Galeria</a></li>
 						<li><a href="#">Historia</a></li>
 					</ul> <!-- end of ul-nav-->
 				</div>
 				</nav>
 				<div class="clear"></div>
-				<div id="slider">
-					<div>
-					<a href="#"><img src="img/banner.png" alt="Brak slidera" /></a>
+				<div id="banner">
+					<div id="foto">
+					<div id="box">
+						<span id="hello">WITAJCIE</span>
+						<p>
+							Witaj na stronie poświęconej Szkolnemu Kołu Krajoznawczo – Turystycznemu
+							SKKT „Elektronik”. Koło działa przy Zespole Szkół Elektryczno – Elektronicznych
+							w Szczecinie i zrzesza ludzi lubiących aktywnie spędzać wolny czas, a przy tym
+							poznawać swoje miasto i region.  Uczymy się posługiwania mapą i kompasem w nieznanym terenie.
+						</p>
 					</div>
-					<div>
-						<a href="#"><img src="img/2010_081.jpg" alt="Brak slidera" /></a>
 					</div>
-				</div> <!-- end of slider -->
+				</div> <!-- end of banner -->
 		</header>
 		<div id="container">
-			<div id="gallery">
+			<div id="content">
+				<div id="gallery">
 				<ul>
 					<li>
 						<img src="foto/01.09.2011/DSC_4949.jpg" alt="no-photo" />
@@ -79,6 +94,7 @@
 					</li>
 				</ul>
 			</div>
+			</div> <!-- end of content-->
 		</div><!--end container -->
 		<div class="clear"></div>
 		<footer>
