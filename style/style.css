@@ -326,25 +326,17 @@ footer .btn{
 	margin-left: 50px;
 }
 
-#gallery{
-
-	width: 960px;
-	margin: 0 auto;
-}
-
 #gallery ul{
-	margin: 80px 0px 0px 0px;
-	
+	margin: 100px 20px 0px 0px;
 }
 
 #gallery ul li{
 	display: inline;
-	margin: 0px 40px 0px 40px;
-	
-	
+	margin: 0px 20px 0px 40px;
 }
 
 #gallery ul li img{
 	width: 400px;
 	height: 200px;
+	margin: 20px 0px 20px 0px;
 }
