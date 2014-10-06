@@ -301,13 +301,22 @@ footer .btn{
 	
 }
 #gallery ul{
-	margin: 100px 0px 0px 0px;
+	margin: 100px 20px 0px 0px;
 }
 
 #gallery ul li{
 	display: inline;
-	margin: 0px 50px 0px 0px;
+	margin: 0px 20px 0px 40px;
 }
+<<<<<<< HEAD
 #slider{
 	
 }
+=======
+
+#gallery ul li img{
+	width: 400px;
+	height: 200px;
+	margin: 20px 0px 20px 0px;
+}
+>>>>>>> origin/master
