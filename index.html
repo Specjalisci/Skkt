@@ -27,7 +27,9 @@
 				firstDay: 1,
 				dateFormat: 'dd-mm-yy',
 				onSelect: function(data){
+					
 					$("#tekst h3").text(data);
+					$.getJSON("kalendarz.php", 'date='+date, processCalendar);
 			}
 			}
 			);
@@ -42,6 +44,10 @@
 			});	
 			
 		});
+		function processCalendar(data)
+		{
+			
+		}
 </script>
 
 </head>
