@@ -8,24 +8,22 @@
 
 		<title>SKKT Elektronik</title>
 		<meta name="author" content="Marek Łunkiewicz & Maciej Gurgul">
-		<link rel="stylesheet" href="style/reset.css" type="text/css" />
-		<link rel="stylesheet" href="style/style.css" type="text/css" /> 
-		<link rel="stylesheet" href="js/anythingslider.css" type="text/css" />
-		<link rel="stylesheet" href="js/jquery-ui.min.css" type="text/css" />
+		<link rel="stylesheet" href="../style/reset.css" type="text/css" />
+		<link rel="stylesheet" href="../style/style.css" type="text/css" /> 
+		<link rel="stylesheet" href="../js/anythingslider.css" type="text/css" />
+		<link rel="stylesheet" href="../js/jquery-ui.min.css" type="text/css" />
+		<link rel="stylesheet" href="fancybox/fancybox/jquery.fancybox-1.3.4.css" type="text/css">
 		<link rel="shortcut icon" href="img/favicon.png">
-		<script src="js/jquery-1.6.3.min.js"></script>
-		<script src="js/jquery.anythingslider.min.js" ></script>
-		<script src="js/jquery-ui.min.js"></script>
+		<script src="../js/jquery-1.6.3.min.js"></script>
+		<script src="fancybox/fancybox/jquery.fancybox-1.3.4.js"></script>
+		<script src="../js/jquery-ui.min.js"></script>
 <script>
 	$(document).ready(function(){
-		$('#slider').anythingSlider({
-			buildStartStop : false,
-			buildNavigation : false
-		});
+	$('#pgallery a').fancybox();
 		$('#kalendarz').datepicker(
 			{
 				firstDay: 1,
-				dateFormat: 'dd-mm-yy',
+					dateFormat: 'dd-mm-yy',
 				onSelect: function(data){
 					$("#tekst h3").text(data);
 			}
@@ -47,17 +45,17 @@
 </head>
 
 <body>
-
+	<div id="prv-billboard"></div>
 	<div id="page">
 		<header>
 			<nav>
 				<div class="center">	
-					<a id="logo" href="#"><img src="img/logo.png" alt="Brak loga"></a>
+					<a id="logo" href="#"><img src="../img/logo.png" alt="Brak loga"></a>
 					<ul id="nav">
-						<li><a href="index.html">Aktualności</a></li>
-						<li><a href="opiekunowie.html">Opiekunowie</a></li>
-						<li><a href="galeria.html">Galeria</a></li>
-						<li><a href="#">Historia</a></li>
+						<li><a href="../index.html">Aktualności</a></li>
+						<li><a href="../opiekunowie.html">Opiekunowie</a></li>
+						<li><a href="../galeria.html">Galeria</a></li>
+						<li><a href="../historia.html">Historia</a></li>
 					</ul> <!-- end of ul-nav-->
 				</div>
 				</nav>
@@ -78,21 +76,20 @@
 		</header>
 		<div id="container">
 			<div id="content">
-				<h2 id="hop">OPIEKUNOWIE</h2>
-			<div id="fgroup">
-				
-				<figure>
-					<img src="foto/Amidala.png" alt="Aretta Zalwewska" /> 
-					<figcaption>InO, OMTTK</figcaption>
-				</figure>
-				<figure>
-					<img src="foto/obi.png" alt="Robert Adamowicz" /> 
-					<figcaption>Rajdy i zloty PTTK/PTSM, Leśne Soboty, Konkurs LmiR o Pomorzu.</figcaption>
-				</figure>
-		</div><!-- end of fgroup -->
+				<ul id="pgallery">
+						<?php
+			if ($katalog = opendir('../foto/01.12.2007/')) {
+    		while (false !== ($file = readdir($katalog))) {
+   				 if ($file != "." && $file != ".." && $file) {
+    			echo "<li><a href=\"../foto/01.12.2007/$file\" rel='gallery'><img src=\"../foto/01.12.2007/$file\" style='width: 150px; height:150px'><br></a></li>\n";
+    			}
+			}
+		}
+	?>
+				</ul>
 			</div> <!-- end of content-->
 		</div><!--end container -->
-		<div class="clear"></div>
+		<div class="clear"> </div>
 		<footer>
 			
 			<div id="row">

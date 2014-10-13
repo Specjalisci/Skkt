@@ -411,11 +411,21 @@ footer .btn{
 .caption{
 	position:absolute;
 	background: rgba(46,46,46, 0.5);
-	width: 97.6%;
+	width: 340px;
 	padding: 10px 0 0px 10px;
 	height: 50px;
 }
 .caption a{
 	color: white;
 	text-decoration: none;
+}
+
+#pgallery{
+	width: 960px;
+	marign: 0 auto;
+}
+#pgallery li{
+	float: left;
+	margin-left: 50px;
+	margin-bottom: 10px;
 }
