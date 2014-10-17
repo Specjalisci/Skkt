@@ -45,7 +45,7 @@
 </head>
 
 <body>
-	<div id="prv-billboard"></div>
+	
 	<div id="page">
 		<header>
 			<nav>
