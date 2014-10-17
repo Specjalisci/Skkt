@@ -424,3 +424,17 @@ footer .btn{
 	height: 80px;
 	width: 80px;
 }
+#hist{
+	text-align: center;
+	margin: 0px 0px 30px 0px;
+}
+
+#historia{
+	margin: 20px 0px 80px 0px;
+	font-size: 1.2em;
+}
+
+#ukryty_przekaz{
+	color: white;
+	float: right;
+}
