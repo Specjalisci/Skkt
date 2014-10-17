@@ -4,9 +4,9 @@
 		$data = $_GET['date'];
 		$data = str_replace('-', '.', $data);
 		//echo $data;
-		$handle = mysql_connect("localhost", "root", "spec123");
+		$handle = mysql_connect("mysql1.ugu.pl", "db670726", "skkt1234");
 		if(!$handle) die("Nie łącze z bazą: ".mysql_error());
-		if(!mysql_select_db("skkt", $handle)) die("Nie można wybrać bazy: ".mysql_error());
+		if(!mysql_select_db("db670726", $handle)) die("Nie można wybrać bazy: ".mysql_error());
 		mysql_query("SET CHARSET utf8"); // polskie znaki
 		mysql_query("SET NAMES `utf8` COLLATE `utf8_general_ci`"); // polskie znaki 
 		$qr = "SELECT `nazwa`, `uwagi`, `organizator` FROM `rajdy` WHERE `data`='$data'";
