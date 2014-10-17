@@ -22,18 +22,92 @@
 			buildStartStop : false,
 			buildNavigation : false
 	}); */
-		$('#kalendarz').datepicker(
+			$('#kalendarz').datepicker(
 			{
 				firstDay: 1,
 				dateFormat: 'dd-mm-yy',
-				onSelect: function(data){
-					
-					$("#tekst h3").text(data);
-					$.getJSON("kalendarz.php", 'date='+date, processCalendar);
-			}
-			}
-			);
+				onSelect: function(date){
+					Kalendarz(date);
+					for(var i=0; i<=31; i++)
+						PodswietlenieKalendarza(i, date.substring(3, 5), date.substring(6,10 ));
+						//24-02-1995
+				},
+				onChangeMonthYear: function(year, month)
+				{
+					var dom = new Date(year, month, 0);
+					var ll = dom.getDate();
+					//alert("Dni w miesiącu: "+ll);
+					for(var i=0; i<ll; i++)
+						PodswietlenieKalendarza(i, month, year);
+				
+				}
+			});
+		var d = new Date;
+		var dd,mm,rr;
+		dd = d.getDate();
+		mm = d.getMonth()+1;
+		rr = d.getFullYear();
+		var dom = new Date(rr, mm, 0);
+		var ll = dom.getDate();
+		dd = dd.toString();
+		mm = mm.toString();
+		rr = rr.toString();
+		if(dd.length == 1) dd = '0'+dd;
+		if(mm.length == 1) mm = '0'+mm;
+		for(var i=1; i<=ll; i++)
+		{
+			PodswietlenieKalendarza(i, mm, rr);
 			
+			
+		}
+		Kalendarz(dd+'-'+mm+'-'+rr);
+			function Kalendarz(date)
+			{
+				$("#tekst p").html('<img id="loading" src="img/loading.gif" />');
+				$.getJSON("kalendarz.php", 'date='+date, function(data){
+						if(data.nazwa == "brak") $("#tekst p").html("<h3>"+date+"</h3>"+"W tym dniu nic się nie odbywa");
+						else $("#tekst p").html("<h3>"+date+"</h3>"+data.nazwa+"<br/>Uwagi: "+data.uwagi+"<br/>Organizator: "+data.organizator);
+						console.log(data);
+					}).done(function(data) {
+						console.log( "Pobieranie zakończone sukcesem" );
+					  })
+					  .fail(function(x,y,z) {
+						console.log( "Błąd pobierania" );
+						console.log(x,y,z);
+					  })
+					  .always(function(data) {
+						console.log( "complete" );
+						});
+			}
+			function PodswietlenieKalendarza(dd,mm,rr)
+			{
+				$.getJSON("kalendarz.php", 'date='+dd+"-"+mm+"-"+rr, function(data){
+						console.log(data);
+						if(data.nazwa != "brak") { 
+							console.log("ZNALEZIONO");
+							$("a.ui-state-default").each(function(){
+								console.log("Znaleziono");
+								if($(this).text() == dd)
+								{
+									console.log("Znaleziono dzień");
+									$(this).css({
+										"color": "red"
+									});
+								}
+							});
+						}
+					})
+					.done(function(data) {
+						console.log( "Pobieranie zakończone sukcesem" );
+					  })
+					  .fail(function(x,y,z) {
+						console.log( "Błąd pobierania" );
+						console.log(x,y,z);
+					  })
+					  .always(function(data) {
+						console.log( "complete" );
+						});
+			}
 			$('.footer').hide();
 			$('.btn').toggle(function(){
 				$(this).text('zwiń');
@@ -44,10 +118,6 @@
 			});	
 			
 		});
-		function processCalendar(data)
-		{
-			
-		}
 </script>
 
 </head>
@@ -92,7 +162,7 @@
 								</p>
 							</li>
 							<li><img src="img/icon3.png" alt="Brak obrazka" />
-							<p>Oderwij się od komputera i poznaj swoich rówieśników
+							<p>Oderwij się od komputera i poznaj swoich rówieńśników
 								w świecie rzeczywistym.							
 							</p>
 							</li>
@@ -109,7 +179,7 @@
 						<div id="kalendarz">
 						</div> 
 						<div id="tekst"> <!-- tutaj ma być suwak-->
-							<p><h3>Tytuł</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+							<p><!--<h3>Tytuł</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
 								nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
@@ -121,7 +191,7 @@
 								nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
 								reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-							</p>
+							--></p>
 						</div> <!--en of tekst -->
 					</div> <!-- end of widget -->
 				<div class="clear"></div>
