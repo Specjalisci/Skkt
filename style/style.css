@@ -207,8 +207,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e469a0', end
 	margin-left: 15px;
 	font-family: "Myriad Pro Regular";
 	float: left;
-	max-height: 60px;
-	height: 60px;
+	max-height: 65px;
+	height: 65px;
 	overflow: hidden;
 }	
 .read-more {
@@ -299,6 +299,11 @@ footer .btn{
 	text-decoration: none;
 	font-size: 30px;
 }
+#fgroup figure{
+	float: left;
+	margin-top: 20px;
+	width: 300px;
+}
 
 #gallery ul{
 
@@ -340,7 +345,7 @@ footer .btn{
 	display:block;
 	margin-top: 25px;
 	color: #04aff0;
-	font-size: 60px;
+	font-size: 55px;
 	font-weight: bold;
 }
 #box p{
@@ -424,6 +429,7 @@ footer .btn{
 	height: 80px;
 	width: 80px;
 }
+
 #pgallery{
 	width: 960px;
 	text-align: center;
@@ -434,3 +440,19 @@ footer .btn{
 	margin-left: 50px;
 	margin-bottom: 20px;
 }
+
+#hist{
+	text-align: center;
+	margin: 0px 0px 30px 0px;
+}
+
+#historia{
+	margin: 20px 0px 80px 0px;
+	font-size: 1.2em;
+}
+
+#ukryty_przekaz{
+	color: white;
+	float: right;
+}
+

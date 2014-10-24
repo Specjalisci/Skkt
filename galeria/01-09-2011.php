@@ -77,10 +77,10 @@
 			<div id="content">
 				<ul id="pgallery">
 						<?php
-			if ($katalog = opendir('../foto/20.09.2014/')) {
+			if ($katalog = opendir('../foto/01.09.2011/')) {
     		while (false !== ($file = readdir($katalog))) {
    				 if ($file != "." && $file != ".." && $file) {
-    			echo "<li><a href=\"../foto/20.09.2014/$file\" rel='gallery'><img src=\"../foto/20.09.2014/$file\" style='width: 150px; height:150px'><br></a></li>\n";
+    			echo "<li><a href=\"../foto/01.09.2011/$file\" rel='gallery'><img src=\"../foto/01.09.2011/$file\" style='width: 150px; height:150px'><br></a></li>\n";
     			}
 			}
 		}
